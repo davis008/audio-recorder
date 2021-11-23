@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_round"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomSheet">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Save Record"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/filenameInput"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="140dp"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/grayDark"
+            android:layout_height="60dp"
+            app:cornerRadius="26dp"
+            app:rippleColor="@color/grayDark"
+            android:text="cancel"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonOkay"
+            android:layout_width="140dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/strokeColor"
+            android:textColor="@color/white"
+            android:layout_height="60dp"
+            app:cornerRadius="26dp"
+            app:rippleColor="@color/grayDark"
+            android:text="ok"/>
+    </LinearLayout>
+
+</LinearLayout>
